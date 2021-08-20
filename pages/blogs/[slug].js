@@ -3,12 +3,35 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import markdownToHtml from '../../utils/markdowntohtml'
-// import markdownToHtml from '../../utils/markdowntohtml'
-
+import Navigation from '../../components/Navigation'
+import Image from 'next/image'
+import { Box, Heading, Text } from '@chakra-ui/layout'
 
 function SingleArticle({ frontmatter, page }) {
+    const { title, cover_image, date } = frontmatter
     return (
-        <div dangerouslySetInnerHTML={{__html: page }} />
+        <>
+            <Navigation />
+            <Box width='50%' margin='0 25%'>
+                <Box>
+                    <Image src={cover_image} alt={title} height='500px' width='800px'/>
+                </Box>
+                <Heading as='h1' mt='40px' mb='20px'>
+                    {title}
+                </Heading>
+                <hr />
+                <Box mb='20px'  mt='20px'>
+                    <Heading as='h4' fontSize='lg'>
+                        Ujjwal Singh Basnet
+                    </Heading>
+                    <Text color="gray.500">
+                        Published on {date}
+                    </Text>
+                </Box>
+                <hr />
+                <Box dangerouslySetInnerHTML={{__html: page }} mt='40px' mb='40px'/>
+            </Box>
+        </>
     )
 }
 export async function getStaticPaths(){
