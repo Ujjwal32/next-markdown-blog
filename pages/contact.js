@@ -7,10 +7,10 @@ function Contact() {
         <>
             <Navigation />
             <Box width='50%' m='0 25%'>
-                <Heading as='h1' fontSize='lg'>
+                <Heading as='h1' fontSize='3xl'>
                     Contact Me
                 </Heading>
-                <Flex>
+                <Flex direction='column' mt={10}>
                     <Link href='#'>Twitter</Link>
                     <Link href='#'>Github</Link>
                     <Link href='#'>LinkedIn</Link>
