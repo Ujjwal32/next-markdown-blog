@@ -10,7 +10,7 @@ function Navigation() {
             <Flex  height='20vh' direction='column'>
             <Flex justify='space-between'>
                 <Heading as='h2'>
-                    Ujjwal's Blog
+                    Ujjwal&apos;s Blog
                 </Heading>
                 <Button onClick={toggleColorMode}>
                     { colorMode === 'light' ? <BsMoon /> : <FiSun />}
