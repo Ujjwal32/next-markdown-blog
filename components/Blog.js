@@ -20,7 +20,7 @@ function Blog({ blog }) {
                         </Box>
                     </Box>
                     <Box padding={2} borderRadius='md' overflow='hidden'>
-                        <Image src={cover_image} alt={title} height='150px' width='170px'/>
+                        <Image src={cover_image} alt={title} height='150px' width='170px' priority={true} placeholder='blur' blurDataURL='iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII='/>
                     </Box>
                 </Flex>
             </Link>
