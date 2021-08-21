@@ -1,6 +1,9 @@
-import { Box, Flex, Heading, Link } from '@chakra-ui/react'
+import { Box, Flex, Heading, HStack, Link } from '@chakra-ui/react'
 import React from 'react'
 import Navigation from '../components/Navigation'
+import { FaTwitter,FaGithub,FaLinkedin } from 'react-icons/fa'
+import { SiHashnode } from 'react-icons/si'
+
 
 function Contact() {
     return (
@@ -11,10 +14,10 @@ function Contact() {
                     Contact Me
                 </Heading>
                 <Flex direction='column' mt={10}>
-                    <Link href='#'>Twitter</Link>
-                    <Link href='#'>Github</Link>
-                    <Link href='#'>LinkedIn</Link>
-                    <Link href='#'>Hashnode</Link>
+                    <HStack><FaTwitter /><Link href='#'> Twitter</Link></HStack>
+                    <HStack><FaGithub/><Link href='#'>Github</Link></HStack>
+                    <HStack><FaLinkedin /><Link href='#'>LinkedIn</Link></HStack>
+                    <HStack><SiHashnode /><Link href='#'>Hashnode</Link></HStack>
                 </Flex>
             </Box>
         </>
