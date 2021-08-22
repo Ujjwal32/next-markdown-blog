@@ -10,9 +10,10 @@ export default function Home({ brief_detail }) {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Ujjwal&apos;s Blog</title>
         <meta name="description" content="This blog website basically includes articles related to JavaScript, NodeJS,React, Chakra-ui, HTML, CSS and many web development technologies." />
         <link rel="icon" href="/favicon.ico" />
+        <link href="https://{{cdn}}/prism@v1.x/themes/prism.css" rel="stylesheet" />
       </Head>
       <Navigation />
       <Box width='50%' m='20px 25%'>

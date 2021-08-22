@@ -14,7 +14,7 @@ function SingleArticle({ frontmatter, page }) {
             <Navigation />
             <Box width='50%' margin='0 25%'>
                 <Box>
-                    <Image src={cover_image} alt={title} height='500px' width='800px'/>
+                    <Image src={cover_image} alt={title} height={500} width={800}/>
                 </Box>
                 <Heading as='h1' mt='40px' mb='20px'>
                     {title}
